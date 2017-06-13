@@ -73,7 +73,7 @@ da propriedade `andando` para o valor booleano que representa "falso".
 Crie um método chamado `nomeCompleto`, que retorne a frase:
 - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 */
-?
+ 
  pessoa.nomeCompleto = function(){
    return 'Olá meu nome é ' + pessoa.nome + ' ' + pessoa.sobrenome + '!';
  }
@@ -91,13 +91,19 @@ Crie um método chamado `mostrarIdade`, que retorne a frase:
 Crie um método chamado `mostrarPeso`, que retorne a frase:
 - "Eu peso [PESO]Kg."
 */
-?
+
+pessoa.mostrarPeso = function() {
+    return "Eu peso " + pessoa.peso + ' kg';
+}
 
 /*
 Crie um método chamado `mostrarAltura` que retorne a frase:
 - "Minha altura é [ALTURA]m."
 */
-?
+ 
+ pessoa.mostrarAltura = function() {
+    return "Minha altura é " + pessoa.altura + ' m.'
+}
 
 /*
 Agora vamos brincar um pouco com o objeto criado:
@@ -143,8 +149,8 @@ retornada)
 */
 
  pessoa.mostrarIdade() // Olá, eu tenho 80 anos!;
- pessoa.mostrarIdade() // Olá, eu tenho 80 anos!;
- pessoa.mostrarIdade() // Olá, eu tenho 80 anos!;
+ pessoa.mostrarIdade() // Olá, eu tenho 81 anos!;
+ pessoa.mostrarIdade() // Olá, eu tenho 82 anos!;
 
 /*
 Agora, faça a `pessoa` caminhar alguns metros, invocando o método `andar` 3x,
